@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.section-headline {
+  @apply font-bold sm:text-xl uppercase tracking-widest border-purple-500 border-l-8 pl-2;
+}
