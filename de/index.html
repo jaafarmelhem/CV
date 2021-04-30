@@ -57,7 +57,7 @@
             <h2 class="text-xl font-semibold mb-4">Kontakt</h2>
             <div class="flex items-center my-3">
               <img
-                src="./assets/mail-outline.svg"
+                src="../assets/mail-outline.svg"
                 class="inline w-6 mr-4"
                 alt="Mail icon"
               />
@@ -67,7 +67,7 @@
             </div>
             <div class="flex items-center my-3">
               <img
-                src="./assets/call-outline.svg"
+                src="../assets/call-outline.svg"
                 class="inline w-6 mr-4"
                 alt="Phone icon"
               />
@@ -75,7 +75,7 @@
             </div>
             <div class="flex items-center my-3">
               <img
-                src="./assets/home-outline.svg"
+                src="../assets/home-outline.svg"
                 class="inline w-6 pb-1 mr-4"
                 alt="House icon"
               />
@@ -87,10 +87,30 @@
           </div>
 
           <div class="font-light text-lg px-2 mb-12">
+            <h2 class="text-xl font-semibold mb-4">Persönliches</h2>
+            <div class="flex items-center my-3">
+              <img
+                src="../assets/egg-outline.svg"
+                class="inline w-6 mr-4"
+                alt="Egg Icon"
+              />
+              <span>Geboren am 23. Februar 1989</span>
+            </div>
+            <div class="flex items-center my-3">
+              <img
+                src="../assets/people-outline.svg"
+                class="inline w-6 mr-4"
+                alt="Two Persons Icon"
+              />
+              <span>Verheiratet, zwei Kinder</span>
+            </div>
+          </div>
+
+          <div class="font-light text-lg px-2 mb-12">
             <h2 class="text-xl font-semibold mb-4">Im Web</h2>
             <div class="flex items-center my-3">
               <img
-                src="./assets/logo-github.svg"
+                src="../assets/logo-github.svg"
                 class="inline w-6 mr-4"
                 alt="GitHub Logo"
               />
@@ -103,7 +123,7 @@
             </div>
             <div class="flex items-center my-3">
               <img
-                src="./assets/logo-linkedin.svg"
+                src="../assets/logo-linkedin.svg"
                 class="inline w-6 mr-4"
                 alt="LinkedIn Logo"
               />
@@ -116,7 +136,7 @@
             </div>
             <div class="flex items-center my-3">
               <img
-                src="./assets/globe-outline.svg"
+                src="../assets/globe-outline.svg"
                 class="inline w-6 mr-4"
                 alt="Globe icon"
               />
@@ -210,30 +230,38 @@
             <h2 class="section-headline">Experience</h2>
             <div>
               <h3>Chemmedia AG</h3>
-              <p>
-                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">Nov.&nbsp;2020:</div>
-                <div class="lg:inline-block lg:w-8/12 w-full">
-                  Working student -
-                  Frontend
+              <section>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Nov.&nbsp;2020:
                 </div>
-              </p>
-              <p>
-                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">Task:</div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                Building out a Vue app which
-                is used for managing content of an e-commerce store.
-              </div>
-              </p>
-              <p>
-                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">Description:</div>
+                  Working student - Frontend
+                </div>
+              </section>
+              <section>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Task:
+                </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                I took over responsibility of a legacy app for managing content
-                data of product pages. The app reads and writes data to PHP
-                arrays which can be rendered on the server with HTML templates.
-              </div>
-              </p>
-              <p>
-                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">Tools:</div>
+                  Building out a Vue app which is used for managing content of
+                  an e-commerce store.
+                </div>
+              </section>
+              <section>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Description:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  I took over responsibility of a legacy app for managing
+                  content data of product pages. The app reads and writes data
+                  to PHP arrays which can be rendered on the server with HTML
+                  templates.
+                </div>
+              </section>
+              <section>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Tools:
+                </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
                   <span class="rounded-xl bg-gray-300 px-3">Vue</span>
                   <span class="rounded-xl bg-gray-300 px-3">Vuex</span>
@@ -243,7 +271,7 @@
                   <span class="rounded-xl bg-gray-300 px-3">Bitbucket</span>
                   <span class="rounded-xl bg-gray-300 px-3">Jira</span>
                 </div>
-              </p>
+              </section>
             </div>
           </div>
           <hr class="mt-8 mb-12" />
@@ -255,7 +283,11 @@
       </main>
     </div>
     <footer class="mt-12 text-center">
-      <a href="http://localhost:3000" class="px-4 py-2 text-gray-600 border-gray-400 border-2 border-b-0 rounded-t-lg">Switch to English CV</a>
-  </footer>
+      <a
+        href="http://localhost:3000"
+        class="text-sm px-4 py-2 text-gray-600 border-gray-400 border-2 border-b-0 rounded-t-lg"
+        >Switch to English CV</a
+      >
+    </footer>
   </body>
 </html>
