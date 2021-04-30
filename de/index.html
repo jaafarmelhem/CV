@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../style.css" type="text/css" />
@@ -22,11 +22,52 @@
 
       progress::-webkit-progress-value {
         border-radius: 10px 0 0 10px;
-        background-image: linear-gradient(36deg, #d1fae5, #60a5fa);
+        background-image: linear-gradient(36deg, #d1fae5, #818cf8);
       }
 
       .section-headline {
-        color: #8b5cf6 !important;
+        color: #10b981 !important;
+      }
+
+      #chrisko-headline::before {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        position: relative;
+        bottom: -8px;
+        content: "";
+        background-image: url("../assets/chrisko-icon.png");
+        background-position: center;
+        background-size: contain;
+        margin-right: 12px;
+        border-radius: 50%;
+      }
+
+      #mealio-headline::before {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        position: relative;
+        bottom: -8px;
+        content: "";
+        background-image: url("../assets/mealio-icon.png");
+        background-position: center;
+        background-size: contain;
+        margin-right: 12px;
+      }
+
+      #headsup-headine::before {
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        position: relative;
+        bottom: -4px;
+        content: "";
+        background-image: url("../assets/headsup-logo.svg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 12px;
       }
     </style>
     <title>Christian Kozalla | CV</title>
@@ -39,7 +80,7 @@
       >
         <div
           id="sidebar"
-          class="w-full sm:max-w-sm p-8 bg-gradient-to-b from-pink-200 via-purple-400 to-white"
+          class="w-full sm:max-w-sm p-8 bg-gradient-to-b from-indigo-300 via-green-300 to-white"
         >
           <div class="px-2 mb-12">
             <img
@@ -118,7 +159,20 @@
                 href="https://github.com/christiankozalla"
                 target="_blank"
                 rel="noopener noreferrer"
-                >github.com/christiankozalla</a
+                >GitHub</a
+              >
+            </div>
+            <div class="flex items-center my-3">
+              <img
+                src="../assets/logo-stackoverflow.svg"
+                class="inline w-6 mr-4"
+                alt="Stack Overflow Logo"
+              />
+              <a
+                href="https://stackoverflow.com/users/13292115/ckoala"
+                target="_blank"
+                rel="noopener noreferrer"
+                >StackOverflow</a
               >
             </div>
             <div class="flex items-center my-3">
@@ -131,7 +185,33 @@
                 href="https://www.linkedin.com/in/christian-kozalla-972831210"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Christian@linkedIn</a
+                >LinkedIn</a
+              >
+            </div>
+            <div class="flex items-center my-3">
+              <img
+                src="../assets/logo-twitter.svg"
+                class="inline w-6 mr-4"
+                alt="Twitter Logo"
+              />
+              <a
+                href="https://twitter.com/CKozalla"
+                target="_blank"
+                rel="noopener noreferrer"
+                >@CKozalla</a
+              >
+            </div>
+            <div class="flex items-center my-3">
+              <img
+                src="../assets/logo-codepen.svg"
+                class="inline w-6 mr-4"
+                alt="CodePen Logo"
+              />
+              <a
+                href="https://codepen.io/ckozalla"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CodePen</a
               >
             </div>
             <div class="flex items-center my-3">
@@ -150,7 +230,7 @@
           </div>
 
           <div class="font-light text-lg px-2 mb-12">
-            <h2 class="text-xl font-semibold mb-4">Fähigkeiten & Tools</h2>
+            <h2 class="text-xl font-semibold mb-4">Skills & Tools</h2>
             <ul class="list-none">
               <li>
                 <label for="js-skill">JavaScript</label>
@@ -169,8 +249,12 @@
                 <progress id="nextjs-skill" max="100" value="72"></progress>
               </li>
               <li>
-                <label for="neleventy-skill">Eleventy</label>
+                <label for="eleventy-skill">Eleventy</label>
                 <progress id="eleventy-skill" max="100" value="66"></progress>
+              </li>
+              <li>
+                <label for="node-skill">Node / Express.js</label>
+                <progress id="node-skill" max="100" value="45"></progress>
               </li>
               <li>
                 <label for="css-skill">SCSS</label>
@@ -181,7 +265,7 @@
                 <progress id="design-skill" max="100" value="62"></progress>
               </li>
               <li>
-                <div>Infrastructure / Hosting / DB</div>
+                <div>Infrastruktur / Hosting / DB</div>
                 <p class="leading-8">
                   <span class="rounded-xl bg-gray-300 px-3">AWS</span>
                   <span class="rounded-xl bg-gray-300 px-3">Vercel</span>
@@ -201,64 +285,74 @@
           </div>
 
           <div class="font-light text-lg px-2 mb-12">
+            <h2 class="text-xl font-semibold mb-4">Vorherige Tätigkeit</h2>
+            <h3 class="font-semibold">Lehrer Mathe/Physik</h3>
+            <p>11/2016 - 11/2019 Saxony International School, Glauchau</p>
+          </div>
+
+          <div class="font-light text-lg px-2 mb-12">
             <h2 class="text-xl font-semibold mb-4">Sprachen</h2>
             <h3 class="font-semibold">Deutsch</h3>
             <p>Muttersprache</p>
             <h3 class="font-semibold">Englisch</h3>
-            <p>Fließend in Wort und Schrift</p>
+            <p>Fließend</p>
           </div>
         </div>
         <div class="content w-full p-12">
           <div id="profile" class="prose">
             <h2 class="section-headline">Profil</h2>
             <p>
-              I'm a self-taught web developer focusing on core web fundamentals
-              - HTML, CSS and JS. I'm experienced in frontend frameworks like
-              Vue and React, static site generators like Next.js and Eleventy.
+              Ich bin Web-Entwickler im Selbststudium mit einem Fokus auf die
+              tragenden Säulen des Webs - HTML, CSS und JS. Erfahrung habe ich
+              mit Frontend Frameworks wie Vue und React sowie mit
+              Static-Site-Generatoren wie Next.js und Eleventy. Ich schreibe
+              SCSS oder nutze CSS-Frameworks wie TailwindCSS, Bootstrap oder
+              Bulma, um das Styling meiner Projekte zu beschleunigen.
             </p>
             <p>
-              Currently working as a student at Chemmedia on a Vue app serving
-              as an internal tool to manage content for an e-commerce store.
+              Derzeit arbeite ich als Werkstudent bei Chemmedia. Meine Aufgabe
+              ist es, eine Vue App weiterzuentwickeln, die als internes Tools
+              zur Content-Pflege eines E-Commerce Shops dient.
             </p>
             <p>
-              Highly interested in expanding my horizonts day by day for better
-              performance, development, testing.
+              I bin höchst motiviert meine Kenntnisse und Fähikeiten jeden Tag
+              zu erweitern, um Performance, Verläßlichkeit und Nutzer-Experience
+              zu verbessern.
             </p>
           </div>
           <hr class="mt-8 mb-12" />
           <div id="experience" class="prose">
-            <h2 class="section-headline">Experience</h2>
+            <h2 class="section-headline">Erfahrung</h2>
             <div>
               <h3>Chemmedia AG</h3>
-              <section>
+              <section class="mb-6">
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Nov.&nbsp;2020:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  Working student - Frontend
+                  Werkstudent - Frontend
                 </div>
               </section>
-              <section>
+              <section class="mb-6">
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                  Task:
+                  Aufgabe:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  Building out a Vue app which is used for managing content of
-                  an e-commerce store.
+                  Weiterentwicklung einer Vue App, die zur Content-Pflege eines
+                  E-Commerce Shops genutzt wird.
                 </div>
               </section>
-              <section>
+              <section class="mb-6">
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                  Description:
+                  Beschreibung:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  I took over responsibility of a legacy app for managing
-                  content data of product pages. The app reads and writes data
-                  to PHP arrays which can be rendered on the server with HTML
-                  templates.
+                  Mit der App ist es möglich, neue Produktseiten für den
+                  Online-Shop zu erstellen oder bestehende Produktseiten zu
+                  aktualisieren.
                 </div>
               </section>
-              <section>
+              <section class="mb-6">
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Tools:
                 </div>
@@ -276,15 +370,266 @@
           </div>
           <hr class="mt-8 mb-12" />
           <div id="projects" class="prose">
-            <h2 class="section-headline">Projects</h2>
+            <h2 class="section-headline">Projekte</h2>
+            <div class="mb-16">
+              <h3 id="chrisko-headline">Chrisko.io</h3>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Blog:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  Mein Blog ist das Zentrum meines Online-Auftritts. Hier
+                  schreibe ich Posts über kürzlich Gelerntes, Tutorials oder
+                  meine Erfahrung in der Web-Entwicklung.
+                </div>
+              </section>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Online unter:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <a
+                    href="https://chrisko.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >chrisko.io</a
+                  >
+                </div>
+              </section>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Code auf:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <a
+                    href="https://github.com/christiankozalla/nextjs-blog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub/nextjs-blog</a
+                  >
+                </div>
+              </section>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Features:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <ul>
+                    <li>Statisches Rendern einer React App mit Next.js</li>
+                    <li>Artikel in Markdown verfasst</li>
+                    <li>Zähler für Seitenaufrufe und Likes</li>
+                    <li>Meine aktuellen Tweets integriert</li>
+                    <li>Titelbilder der Artikel mit Inkscape erstellt</li>
+                    <li>SEO</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Built with:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <span class="rounded-xl bg-gray-300 px-3">Next.js</span>
+                  <span class="rounded-xl bg-gray-300 px-3">CSS</span>
+                  <span class="rounded-xl bg-gray-300 px-3">styled-jsx</span>
+                  <span class="rounded-xl bg-gray-300 px-3">DynamoDB</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Vercel</span>
+                </div>
+              </section>
+            </div>
+
+            <div class="mb-16">
+              <h3 id="mealio-headline">Mealio</h3>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Essensplaner PWA:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  Mealio ist eine Frontend App, mit der man ganz einfach seine
+                  Mittagessen eine Woche im Voraus planen kann. Man kann seine
+                  eigenen Gerichte speichern und auswählen, wann was gegessen
+                  wird. Die Webseite kann als App auf dem Handy installiert
+                  werden.
+                </div>
+              </section>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Online unter:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <a
+                    href="https://mealio.surge.sh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >mealio.surge.sh</a
+                  >
+                </div>
+              </section>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Code auf:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <a
+                    href="https://github.com/christiankozalla/vue-custom-mealio"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub/vue-custom-mealio</a
+                  >
+                </div>
+              </section>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Features:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <ul>
+                    <li>Erstelle dein eigenes Rezeptebuch</li>
+                    <li>Plane deine Gerichte eine Woche im Voraus</li>
+                    <li>
+                      Speichere dein Rezeptebuch und deinen Essensplan nur für
+                      dich auf deinem Gerät
+                    </li>
+                    <li>Lösche Rezepte oder Plan, falls nötig</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Erstellt mit:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <span class="rounded-xl bg-gray-300 px-3">Vue</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Bulma</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Local Storage</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Inkscape</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Ionic Icons</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Surge</span>
+                </div>
+              </section>
+            </div>
+
+            <div class="mb-16">
+              <h3 id="headsup-headine">HeadsUP</h3>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Quiz App:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  HeadsUP ist eine Frontend Quiz App, die ich für ein Tutorial
+                  erstellt habe. In jeder Runde werden fünf Fragen von der
+                  Trivia API abgerufen. Am Ende der Runde erhält der Quizzer
+                  eine Übersicht über seine Performance.
+                </div>
+              </section>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Online unter:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <a
+                    href="https://vue-quiz-app-hazel.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >vue-quiz-app-hazel.vercel.app</a
+                  >
+                </div>
+              </section>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Code auf:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <a
+                    href="https://github.com/christiankozalla/vue-quiz-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub/vue-quiz-app</a
+                  >
+                </div>
+              </section>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Tutorial hier:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <a
+                    href="https://chrisko.io/posts/vue-tutorial-frontend-quiz-app-headsup"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Vue Tutorial: Build a Frontend Quiz App</a
+                  >
+                </div>
+              </section>
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Features:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <ul>
+                    <li>
+                      Spiele ein Set von fünf zufälligen Fragen von der
+                      <a
+                        href="https://opentdb.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Trivia API</a
+                      >
+                    </li>
+                    <li>Wähle die richtige von vier möglichen Antworten</li>
+                    <li>
+                      Erhalte eine Performance-Übersicht am Ende der Runde
+                    </li>
+                    <li>
+                      Tutorial: Lerne, wie du selbst diese Quiz App schreiben
+                      kannst
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="mb-6">
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Erstellt mit:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <span class="rounded-xl bg-gray-300 px-3">Vue</span>
+                  <span class="rounded-xl bg-gray-300 px-3">CSS</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Trivia API</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Vercel</span>
+                </div>
+              </section>
+            </div>
           </div>
           <hr class="mt-8 mb-12" />
+          <div id="projects" class="prose">
+            <h2 class="section-headline">Erweitere meine Skills</h2>
+            <div class="mb-16">
+              <h4 id="expand-knowledge-headline">
+                Ich will meine Fähigkeiten auf den folgenden Gebieten erweitern:
+              </h4>
+              <ul>
+                <li>TypeScript</li>
+                <li>Testen, z.B. with Mocha, Chai, Jest</li>
+                <li>Web Components, z.B. mit StencilJS, LitElement</li>
+                <li>Prototyping und Wireframing, z.B. mit Figma, Adobe XD</li>
+                <li>Scalable Vector Graphics</li>
+                <li>Datenbanken</li>
+                <li>
+                  Backend Development, z.B. durch Lernen einer weiteren Sprache
+                  wie Go, Python, PHP, Ruby, Java, Rust
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </main>
     </div>
     <footer class="mt-12 text-center">
       <a
-        href="http://localhost:3000"
+        href="https://christiankozalla.github.io/CV"
         class="text-sm px-4 py-2 text-gray-600 border-gray-400 border-2 border-b-0 rounded-t-lg"
         >Switch to English CV</a
       >
