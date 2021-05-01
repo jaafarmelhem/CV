@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "deploy": "vite build && npx push-dir --dir=dist --branch=gh-pages"
+    "deploy": "vite build && cd dist && git add . && git commit -m \"deploy to gh-pages\" && cd .. && npx push-dir --dir=dist --branch=gh-pages"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.0",
