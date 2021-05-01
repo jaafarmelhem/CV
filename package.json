@@ -11,6 +11,7 @@
     "autoprefixer": "^10.2.5",
     "cssnano": "^5.0.1",
     "postcss": "^8.2.12",
+    "push-dir": "^0.4.1",
     "tailwindcss": "^2.1.1",
     "vite": "^2.1.5"
   }
