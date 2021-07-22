@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/CV/assets/favicon.17e50649.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta http-equiv="expires" content="31536000" />
 
     
     <title>Christian Kozalla | CV</title>
-  <script type="module" crossorigin src="/CV/assets/main.aa205fd7.js"></script>
-  <link rel="modulepreload" href="/CV/assets/style.ac008480.js">
-  <link rel="stylesheet" href="/CV/assets/style.c8592102.css">
+  <script type="module" crossorigin src="/CV/assets/main.10f539c1.js"></script>
+  <link rel="modulepreload" href="/CV/assets/style.6b472556.js">
+  <link rel="stylesheet" href="/CV/assets/style.90b57556.css">
 </head>
   <body class="font-sans antialiased w-full">
     <div class="container mx-auto max-w-screen-xl">
@@ -31,7 +33,7 @@
         >
           <div class="px-2 mb-12">
             <img
-              src="/CV/assets/avatar_ck_transparent.892b150b.png"
+              src="/CV/assets/avatar_ck_transparent.5142c517.png"
               alt="Christian Kozalla Profile Picture"
               class="rounded-full w-48 mx-auto mb-2"
             />
@@ -192,12 +194,12 @@
                 <progress id="vue-skill" max="100" value="80"></progress>
               </li>
               <li>
-                <label for="vue-skill">Angular</label>
-                <progress id="vue-skill" max="100" value="33"></progress>
+                <label for="angular-skill">Angular</label>
+                <progress id="angular-skill" max="100" value="33"></progress>
               </li>
               <li>
-                <label for="vue-skill">RxJS</label>
-                <progress id="vue-skill" max="100" value="33"></progress>
+                <label for="rxjs-skill">RxJS</label>
+                <progress id="rxjs-skill" max="100" value="33"></progress>
               </li>
               <li>
                 <label for="react-skill">React</label>
@@ -286,6 +288,7 @@
             <div>
               <h3>Chemmedia AG</h3>
               <section class="mb-6">
+                <h3 class="hidden">Role</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Since Nov.&nbsp;2020:
                 </div>
@@ -294,6 +297,7 @@
                 </div>
               </section>
               <section class="mb-6">
+                <h3 class="hidden">Tasks at Chemmedia</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Tasks:
                 </div>
@@ -309,6 +313,7 @@
                 </div>
               </section>
               <section class="mb-6">
+                <h3 class="hidden">Responsibility at Chemmedia</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Description:
                 </div>
@@ -320,6 +325,7 @@
                 </div>
               </section>
               <section class="mb-6">
+                <h3 class="hidden">Tools I use at Chemmedia</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Tools:
                 </div>
@@ -339,8 +345,95 @@
           <div id="projects" class="prose">
             <h2 class="section-headline">Projects</h2>
             <div class="mb-16">
+              <h3 id="dinoeatlife-headline">Dino Eat Life</h3>
+              <p class="text-sm italic">Still in development</p>
+              <section class="mb-6">
+                <h3 class="hidden">Dino Eat Life App Description</h3>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  App for managing food-related stuff:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  Manage meal planning, food storage and shopping with your
+                  family members or flat mates from right within a single mobile
+                  app.
+                </div>
+              </section>
+              <section class="mb-6">
+                <h3 class="hidden">Dino Eat Life Code Repository</h3>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Code on:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <a
+                    class="block pb-2"
+                    href="https://github.com/christiankozalla/dinoeatlife-ionic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Frontend: GitHub/dinoeatlife-ionic
+                  </a>
+                  <a
+                    class="block pb-2"
+                    href="https://github.com/christiankozalla/dinoeatlife-backend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Backend: GitHub/dinoeatlife-backend
+                  </a>
+                </div>
+              </section>
+              <section class="mb-6">
+                <h3 class="hidden">Dino Eat Life Features</h3>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Features:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <div class="font-semibold">Frontend</div>
+                  <span class="text-sm italic">
+                    Most features still in development
+                  </span>
+                  <ul class="m-ul">
+                    <li>
+                      Run the app on Android, iOS and on the web with Ionic
+                    </li>
+                    <li>
+                      Manage data stores with BehaviorSubjects within Angular
+                      services
+                    </li>
+                    <li>Users can create posts and recipes</li>
+                    <li>Users can plan meals</li>
+                    <li>Users can manage food storage and shopping lists</li>
+                    <li>Invite family members or flat mates</li>
+                  </ul>
+                  <div class="font-semibold">Backend</div>
+                  <ul>
+                    <li>User authentication and authoritation with JWT</li>
+                    <li>Access token and refresh token logic</li>
+                    <li>Register users with email validation</li>
+                    <li>Anti-CSRF cookie</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="mb-6">
+                <h3 class="hidden">Tools Dino Eat Life is built with</h3>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Built with:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <span class="rounded-xl bg-gray-300 px-3">Angular</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Ionic</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Hapi</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Prisma</span>
+                  <span class="rounded-xl bg-gray-300 px-3">PostgreSQL</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Docker</span>
+                </div>
+              </section>
+            </div>
+            <div class="mb-16">
               <h3 id="chrisko-headline">Chrisko.io</h3>
               <section class="mb-6">
+                <h3 class="hidden">Project Description for Chrisko.io</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Personal blog:
                 </div>
@@ -377,11 +470,12 @@
                 </div>
               </section>
               <section class="mb-6">
+                <h3 class="hidden">My blog's features</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Features:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  <ul>
+                  <ul class="m-ul">
                     <li>Static generation</li>
                     <li>Blog content written in Markdown</li>
                     <li>Counter for pageviews and likes</li>
@@ -392,6 +486,7 @@
               </section>
 
               <section class="mb-6">
+                <h3 class="hidden">Tools I used to build my blog</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Built with:
                 </div>
@@ -408,6 +503,7 @@
             <div class="mb-16">
               <h3 id="mealio-headline">Mealio</h3>
               <section class="mb-6">
+                <h3 class="hidden">Mealio app description</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Meal planning PWA:
                 </div>
@@ -445,11 +541,12 @@
                 </div>
               </section>
               <section class="mb-6">
+                <h3 class="hidden">Mealio app features</h3>
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
                   Features:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  <ul>
+                  <ul class="m-ul">
                     <li>Create your personal cookbook</li>
                     <li>Plan your meals for the next week</li>
                     <li>
@@ -535,7 +632,7 @@
                   Features:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  <ul>
+                  <ul class="m-ul">
                     <li>
                       Play a set of 5 random questions from the
                       <a
@@ -566,12 +663,12 @@
             </div>
           </div>
           <hr class="mt-8 mb-12" />
-          <div id="projects" class="prose">
+          <div id="skills" class="prose">
             <h2 class="section-headline">Expand my skills</h2>
             <div class="mb-16">
-              <h4 id="expand-knowledge-headline">
+              <h3 id="expand-knowledge-headline">
                 I'd like to expand my skills and knowledge in several fields
-              </h4>
+              </h3>
               <ul>
                 <li>Testing, e.g. with Jest</li>
                 <li>Mobile development / Cross-Platform</li>
@@ -591,7 +688,7 @@
     </div>
     <footer class="mt-12 text-center">
       <a
-        href="https://christiankozalla.github.io/CV/de/index.html"
+        href="https://christiankozalla.github.io/CV/de/"
         class="
           text-sm
           px-4
