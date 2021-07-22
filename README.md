@@ -17,3 +17,16 @@ Pushing into the gh-pages branch updates the live version of my CV
 - `build`: Outputs both the English and German version into `dist` directory
 - `preview`: Enables preview of the `dist` directory after build
 - `deploy`: Pushes `dist` to gh-pages branch
+
+## Deployment
+
+In order to deploy (i.e. pushing dist to gh-pages branch) run the following Commands
+
+```sh
+$ npm run build
+
+$ git add dist/
+$ git commit -m "New build"
+
+$npm run deploy
+```
