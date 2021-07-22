@@ -189,12 +189,12 @@
                 <progress id="vue-skill" max="100" value="80"></progress>
               </li>
               <li>
-                <label for="vue-skill">Angular</label>
-                <progress id="vue-skill" max="100" value="33"></progress>
+                <label for="angular-skill">Angular</label>
+                <progress id="angular-skill" max="100" value="33"></progress>
               </li>
               <li>
-                <label for="vue-skill">RxJS</label>
-                <progress id="vue-skill" max="100" value="33"></progress>
+                <label for="rxjs-skill">RxJS</label>
+                <progress id="rxjs-skill" max="100" value="33"></progress>
               </li>
               <li>
                 <label for="react-skill">React</label>
@@ -294,13 +294,13 @@
               </section>
               <section class="mb-6">
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                  Aufgabem:
+                  Aufgaben:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  <p>
+                  <div>
                     a) Weiterentwicklung einer Vue App, die zur Content-Pflege
                     eines E-Commerce Shops genutzt wird.
-                  </p>
+                  </div>
                   <p>
                     b) Weiterentwicklung und Wartung des Frontends eines
                     E-Commerce Shops mit SCSS und JavaScript
@@ -336,6 +336,101 @@
           <hr class="mt-8 mb-12" />
           <div id="projects" class="prose">
             <h2 class="section-headline">Projekte</h2>
+            <div class="mb-16">
+              <h3 id="dinoeatlife-headline">Dino Eat Life</h3>
+              <p class="text-sm italic">Im Entwicklungsstadium</p>
+              <section class="mb-6">
+                <h3 class="hidden">Dino Eat Life App Beschreibung</h3>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Hybrid-App:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  Manage deine Rezepte, Mahlzeiten und wöchentliche Einkäufe mit
+                  der Familie oder Mitbewohnern.
+                </div>
+              </section>
+              <section class="mb-6">
+                <h3 class="hidden">Dino Eat Life Code Repository</h3>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Code auf:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <a
+                    class="block pb-2"
+                    href="https://github.com/christiankozalla/dinoeatlife-ionic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Frontend: GitHub/dinoeatlife-ionic
+                  </a>
+                  <a
+                    class="block pb-2"
+                    href="https://github.com/christiankozalla/dinoeatlife-backend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Backend: GitHub/dinoeatlife-backend
+                  </a>
+                </div>
+              </section>
+              <section class="mb-6">
+                <h3 class="hidden">Dino Eat Life Features</h3>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Features:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <div class="font-semibold">Frontend</div>
+                  <span class="text-sm italic">
+                    Die meisten Features noch in der Entwicklung
+                  </span>
+                  <ul class="m-ul">
+                    <li>
+                      Die Ionic Hybrid-App soll auf Android, iOS und im Web
+                      laufen
+                    </li>
+                    <li>
+                      State Management mit RxJS BehaviorSubjects in Angular
+                      Services
+                    </li>
+                    <li>Nutzer können Rezepte und Posts erstellen</li>
+                    <li>Nutzer können ihre Mahlzeiten planen</li>
+                    <li>
+                      Nutzer haben ihre Vorräte im Blick und erstellen mit
+                      Leichtigkeit ihren Einkaufszettel
+                    </li>
+                    <li>
+                      Nutzer können Familienmitglieder oder Mitbewohner einladen
+                    </li>
+                  </ul>
+                  <div class="font-semibold">Backend</div>
+                  <ul>
+                    <li>
+                      Nutzer-Authentifizierung und -Authorisierung mittels JWT
+                    </li>
+                    <li>Access-Token und Refresh-Token Logik ohne DB-Calls</li>
+                    <li>Nutzer-Registrierung mittels Email-Verfizierung</li>
+                    <li>Anti-CSRF Cookie</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section class="mb-6">
+                <h3 class="hidden">
+                  Tools, mit denen Dino Eat Life entwickelt wird
+                </h3>
+                <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
+                  Erstellt mit:
+                </div>
+                <div class="lg:inline-block lg:w-8/12 w-full">
+                  <span class="rounded-xl bg-gray-300 px-3">Angular</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Ionic</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Hapi</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Prisma</span>
+                  <span class="rounded-xl bg-gray-300 px-3">PostgreSQL</span>
+                  <span class="rounded-xl bg-gray-300 px-3">Docker</span>
+                </div>
+              </section>
+            </div>
             <div class="mb-16">
               <h3 id="chrisko-headline">Chrisko.io</h3>
               <section class="mb-6">
@@ -379,7 +474,7 @@
                   Features:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  <ul>
+                  <ul class="m-ul">
                     <li>Statisches Rendern einer React App mit Next.js</li>
                     <li>Artikel in Markdown verfasst</li>
                     <li>Zähler für Seitenaufrufe und Likes</li>
@@ -391,7 +486,7 @@
 
               <section class="mb-6">
                 <div class="lg:inline-block lg:w-3/12 lg:align-top italic mb-2">
-                  Built with:
+                  Erstellt mit:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
                   <span class="rounded-xl bg-gray-300 px-3">Next.js</span>
@@ -448,7 +543,7 @@
                   Features:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  <ul>
+                  <ul class="m-ul">
                     <li>Erstelle dein eigenes Rezeptebuch</li>
                     <li>Plane deine Gerichte eine Woche im Voraus</li>
                     <li>
@@ -532,7 +627,7 @@
                   Features:
                 </div>
                 <div class="lg:inline-block lg:w-8/12 w-full">
-                  <ul>
+                  <ul class="m-ul">
                     <li>
                       Spiele ein Set von fünf zufälligen Fragen von der
                       <a
@@ -568,13 +663,13 @@
             </div>
           </div>
           <hr class="mt-8 mb-12" />
-          <div id="projects" class="prose">
+          <div id="skills" class="prose">
             <h2 class="section-headline">Erweitere meine Skills</h2>
             <div class="mb-16">
               <h4 id="expand-knowledge-headline">
                 Ich will meine Fähigkeiten auf den folgenden Gebieten erweitern:
               </h4>
-              <ul>
+              <ul class="m-ul">
                 <li>Testen, z.B. mit Jest</li>
                 <li>Mobile Entwicklung / Cross-Platform</li>
                 <li>Datenbanken</li>

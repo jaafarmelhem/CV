@@ -28,6 +28,20 @@ progress::-webkit-progress-value {
   color: #10b981 !important;
 }
 
+#dinoeatlife-headline::before {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  bottom: -8px;
+  content: "";
+  background-image: url("./assets/dinoeatlife-logo.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 12px;
+}
+
 #chrisko-headline::before {
   display: inline-block;
   height: 30px;
@@ -67,4 +81,12 @@ progress::-webkit-progress-value {
   background-size: contain;
   background-repeat: no-repeat;
   margin-right: 12px;
+}
+
+.m-ul {
+  margin-top: 0 !important;
+}
+
+.m-ul li:first-child {
+  margin-top: 0 !important;
 }
