@@ -20,7 +20,9 @@ Pushing into the gh-pages branch updates the live version of my CV
 
 ## Deployment
 
-In order to deploy (i.e. pushing dist to gh-pages branch) run the following Commands
+In order to deploy (i.e. pushing dist to gh-pages branch) run the following commands.
+
+Working tree must be clean before `$ npm run deploy`
 
 ```sh
 $ npm run build
